@@ -88,7 +88,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('sallys-cart', JSON.stringify(state.items))
   }, [state.items])
 
-  const addItem = (item: CartItem) => dispatch({ type: 'ADD_ITEM', payload: item })
+  const addItem = (item: CartItem) => {
+    dispatch({ type: 'ADD_ITEM', payload: item })
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate([30, 50, 30])
+    }
+  }
   const removeItem = (id: string) => dispatch({ type: 'REMOVE_ITEM', payload: id })
   const updateQuantity = (id: string, quantity: number) =>
     dispatch({ type: 'UPDATE_QUANTITY', payload: { id, quantity } })
