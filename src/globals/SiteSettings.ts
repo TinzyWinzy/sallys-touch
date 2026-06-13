@@ -29,11 +29,12 @@ export const SiteSettings: GlobalConfig = {
     {
       name: 'contactEmail',
       type: 'email',
-      defaultValue: 'hello@sallystouch.com',
+      defaultValue: 'sally.mandiveyi@gmail.com',
     },
     {
       name: 'contactPhone',
       type: 'text',
+      defaultValue: '+263789257728 / +263781334474',
     },
     {
       name: 'socialLinks',
@@ -49,9 +50,9 @@ export const SiteSettings: GlobalConfig = {
       name: 'shippingInfo',
       type: 'group',
       fields: [
-        { name: 'domesticRate', type: 'number', defaultValue: 5 },
-        { name: 'internationalRate', type: 'number', defaultValue: 15 },
-        { name: 'freeShippingThreshold', type: 'number', defaultValue: 100 },
+        { name: 'domesticRate', type: 'number', defaultValue: 30 },
+        { name: 'internationalRate', type: 'number', defaultValue: 30 },
+        { name: 'freeShippingThreshold', type: 'number', defaultValue: 0 },
       ],
     },
     {

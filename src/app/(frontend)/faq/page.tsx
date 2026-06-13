@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'What is your shipping policy?',
-    a: 'We offer free shipping on orders over $100. Domestic orders are processed within 2-3 business days and delivered within 5-7 business days. International shipping takes 7-14 business days.',
+    a: 'We offer flat-rate worldwide shipping for $30 via FedEx and DHL. Orders are processed within 1-2 business days. Delivery times vary by destination.',
   },
   {
     q: 'What is your return policy?',
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'Do you ship internationally?',
-    a: 'Yes, we ship worldwide! International shipping rates vary by destination and are calculated at checkout. Customs duties may apply and are the responsibility of the customer.',
+    a: 'Yes, we ship worldwide from Zimbabwe via FedEx and DHL! Shipping is a flat $30 regardless of destination. Customs duties may apply and are the responsibility of the customer.',
   },
   {
     q: 'Can I track my order?',

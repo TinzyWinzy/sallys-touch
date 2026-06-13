@@ -113,18 +113,9 @@ export default function ContactPage() {
           <div className="flex gap-4">
             <Mail size={18} className="text-accent mt-0.5 shrink-0" />
             <div>
-              <h4 className="text-xs uppercase tracking-wider text-muted mb-1">General Enquiries</h4>
-              <a href="mailto:hello@sallystouch.com" className="text-sm hover:text-accent transition-colors">
-                hello@sallystouch.com
-              </a>
-            </div>
-          </div>
-          <div className="flex gap-4">
-            <Mail size={18} className="text-accent mt-0.5 shrink-0" />
-            <div>
-              <h4 className="text-xs uppercase tracking-wider text-muted mb-1">Sales & Wholesale</h4>
-              <a href="mailto:sales@sallystouch.com" className="text-sm hover:text-accent transition-colors">
-                sales@sallystouch.com
+              <h4 className="text-xs uppercase tracking-wider text-muted mb-1">Sally</h4>
+              <a href="mailto:sally.mandiveyi@gmail.com" className="text-sm hover:text-accent transition-colors">
+                sally.mandiveyi@gmail.com
               </a>
             </div>
           </div>
@@ -132,14 +123,15 @@ export default function ContactPage() {
             <Phone size={18} className="text-accent mt-0.5 shrink-0" />
             <div>
               <h4 className="text-xs uppercase tracking-wider text-muted mb-1">Phone</h4>
-              <p className="text-sm text-muted">+1 (555) 123-4567</p>
+              <p className="text-sm text-muted">+263 78 925 7728</p>
+              <p className="text-sm text-muted">+263 78 133 4474</p>
             </div>
           </div>
           <div className="flex gap-4">
             <MapPin size={18} className="text-accent mt-0.5 shrink-0" />
             <div>
               <h4 className="text-xs uppercase tracking-wider text-muted mb-1">Location</h4>
-              <p className="text-sm text-muted">Harare, Zimbabwe & Cape Town, South Africa</p>
+              <p className="text-sm text-muted">Harare, Zimbabwe</p>
             </div>
           </div>
           <div className="flex gap-4">

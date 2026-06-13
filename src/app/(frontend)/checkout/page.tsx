@@ -6,9 +6,7 @@ import { useCart } from '@/lib/CartContext'
 import { ChevronLeft, Lock } from 'lucide-react'
 
 const shippingMethods = [
-  { id: 'standard', label: 'Standard (5-7 business days)', cost: 5 },
-  { id: 'express', label: 'Express (2-3 business days)', cost: 15 },
-  { id: 'free', label: 'Free Shipping (7-10 business days)', cost: 0 },
+  { id: 'worldwide', label: 'Worldwide Shipping (FedEx / DHL)', cost: 30 },
 ]
 
 interface FormState {
@@ -30,13 +28,13 @@ const initialForm: FormState = {
 
 export default function CheckoutPage() {
   const { state, subtotal, totalItems, clearCart } = useCart()
-  const [shipping, setShipping] = useState('standard')
+  const [shipping, setShipping] = useState('worldwide')
   const [paymentMethod, setPaymentMethod] = useState<'paynow' | 'paypal'>('paynow')
   const [form, setForm] = useState<FormState>(initialForm)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
 
-  const shippingCost = shippingMethods.find((s) => s.id === shipping)?.cost ?? 5
+  const shippingCost = shippingMethods.find((s) => s.id === shipping)?.cost ?? 30
   const total = subtotal + shippingCost
 
   const updateField = (field: keyof FormState, value: string) =>
@@ -165,7 +163,7 @@ export default function CheckoutPage() {
                     value={form.email}
                     onChange={(e) => updateField('email', e.target.value)}
                     className="w-full px-4 py-3 border border-border bg-white text-sm focus:outline-none focus:border-accent"
-                    placeholder="sally@example.com"
+                    placeholder="sally.mandiveyi@gmail.com"
                     required
                   />
                 </div>
@@ -177,7 +175,7 @@ export default function CheckoutPage() {
                     value={form.phone}
                     onChange={(e) => updateField('phone', e.target.value)}
                     className="w-full px-4 py-3 border border-border bg-white text-sm focus:outline-none focus:border-accent"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+263 78 925 7728"
                   />
                 </div>
               </div>
@@ -233,6 +231,10 @@ export default function CheckoutPage() {
                     <option>South Africa</option>
                     <option>United States</option>
                     <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>Germany</option>
+                    <option>France</option>
                     <option>Other</option>
                   </select>
                 </div>

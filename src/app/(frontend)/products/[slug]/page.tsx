@@ -226,7 +226,7 @@ export default function ProductDetailPage() {
           <div className="mt-8 flex items-start gap-3 p-4 bg-secondary">
             <Check size={16} className="text-accent mt-0.5 shrink-0" />
             <p className="text-xs text-muted leading-relaxed">
-              Free shipping on orders over $100. 30-day returns. All bags are handcrafted and may vary slightly — that&apos;s the beauty of handmade.
+              Worldwide shipping for a flat $30 via FedEx / DHL. 30-day returns. All bags are handcrafted and may vary slightly — that&apos;s the beauty of handmade.
             </p>
           </div>
         </div>
