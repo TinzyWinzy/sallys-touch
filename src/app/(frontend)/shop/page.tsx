@@ -22,15 +22,15 @@ const fallbackCategories = [
 ]
 
 const fallbackProducts = [
-  { title: 'The Grace Tote', price: 295, category: 'Totes', slug: 'the-grace-tote', image: '/images/optimized/the-grace-tote.webp' },
-  { title: 'The Noir Crossbody', price: 245, category: 'Crossbody', slug: 'the-noir-crossbody', image: '/images/optimized/the-noir-crossbody.webp' },
-  { title: 'The Blossom Clutch', price: 195, category: 'Clutches', slug: 'the-blossom-clutch', image: '/images/optimized/the-blossom-clutch.webp' },
-  { title: 'The Dusk Satchel', price: 320, category: 'Satchels', slug: 'the-dusk-satchel', image: '/images/optimized/the-dusk-satchel.webp' },
-  { title: 'The Ember Shoulder Bag', price: 275, category: 'Signature', slug: 'the-ember-shoulder', image: '/images/optimized/the-ember-shoulder.webp' },
-  { title: 'The Pearl Mini Bag', price: 180, category: 'Evening', slug: 'the-pearl-mini', image: '/images/optimized/the-pearl-mini.webp' },
-  { title: 'The Velvet Crescent', price: 260, category: 'Crossbody', slug: 'the-velvet-crescent', image: '/images/optimized/the-velvet-crescent.webp' },
-  { title: 'The Gilded Bucket', price: 310, category: 'Signature', slug: 'the-gilded-bucket', image: '/images/optimized/the-gilded-bucket.webp' },
-  { title: 'The Linen Market Bag', price: 160, category: 'Totes', slug: 'the-linen-market', image: '/images/optimized/the-linen-market.webp' },
+  { title: 'The Grace Tote', price: 150, category: 'Totes', slug: 'the-grace-tote', image: '/images/optimized/the-grace-tote.webp' },
+  { title: 'The Noir Crossbody', price: 120, category: 'Crossbody', slug: 'the-noir-crossbody', image: '/images/optimized/the-noir-crossbody.webp' },
+  { title: 'The Blossom Clutch', price: 120, category: 'Clutches', slug: 'the-blossom-clutch', image: '/images/optimized/the-blossom-clutch.webp' },
+  { title: 'The Dusk Satchel', price: 150, category: 'Satchels', slug: 'the-dusk-satchel', image: '/images/optimized/the-dusk-satchel.webp' },
+  { title: 'The Ember Shoulder Bag', price: 150, category: 'Signature', slug: 'the-ember-shoulder', image: '/images/optimized/the-ember-shoulder.webp' },
+  { title: 'The Pearl Mini Bag', price: 120, category: 'Evening', slug: 'the-pearl-mini', image: '/images/optimized/the-pearl-mini.webp' },
+  { title: 'The Velvet Crescent', price: 120, category: 'Crossbody', slug: 'the-velvet-crescent', image: '/images/optimized/the-velvet-crescent.webp' },
+  { title: 'The Gilded Bucket', price: 150, category: 'Signature', slug: 'the-gilded-bucket', image: '/images/optimized/the-gilded-bucket.webp' },
+  { title: 'The Linen Market Bag', price: 150, category: 'Totes', slug: 'the-linen-market', image: '/images/optimized/the-linen-market.webp' },
 ]
 
 function getImageForSlug(slug: string): string {
